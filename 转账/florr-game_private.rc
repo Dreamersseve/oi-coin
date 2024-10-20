@@ -1,0 +1,36 @@
+/* THIS FILE WILL BE OVERWRITTEN BY Red Panda C++ */
+/* DO NOT EDIT! */
+
+#include <windows.h> // include for version info constants
+
+
+A ICON "app.ico"
+
+//
+// TO CHANGE VERSION INFORMATION, EDIT PROJECT OPTIONS...
+//
+1 VERSIONINFO
+FILEVERSION 1,0,0,0
+PRODUCTVERSION 1,0,0,0
+FILETYPE VFT_APP
+{
+  BLOCK "StringFileInfo"
+  {
+    BLOCK "080404e4"
+    {
+      VALUE "CompanyName", ""
+      VALUE "FileVersion", "0.1"
+      VALUE "FileDescription", "Developed using the Red Panda C++ IDE"
+      VALUE "InternalName", ""
+      VALUE "LegalCopyright", "seve"
+      VALUE "LegalTrademarks", ""
+      VALUE "OriginalFilename", "cc-game.exe"
+      VALUE "ProductName", "cc-game"
+      VALUE "ProductVersion", "0.1.1.1"
+    }
+  }
+  BLOCK "VarFileInfo"
+  {
+    VALUE "Translation", 0x0804, 1252
+  }
+}

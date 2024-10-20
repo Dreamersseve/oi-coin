@@ -1,0 +1,42 @@
+[
+    {
+        "caretX": 23,
+        "caretY": 9,
+        "filename": "D:/Desktop/florr/project/转账/chient.cpp",
+        "focused": true,
+        "isOpen": true,
+        "left": 0,
+        "order": 3,
+        "top": 0
+    },
+    {
+        "caretX": 16,
+        "caretY": 123,
+        "filename": "D:/Desktop/florr/project/转账/RSA.cpp",
+        "focused": false,
+        "isOpen": true,
+        "left": 0,
+        "order": 2,
+        "top": 1254
+    },
+    {
+        "caretX": 3,
+        "caretY": 96,
+        "filename": "D:/Desktop/florr/project/转账/game.cpp",
+        "focused": false,
+        "isOpen": true,
+        "left": 0,
+        "order": 1,
+        "top": 1738
+    },
+    {
+        "caretX": 11,
+        "caretY": 14,
+        "filename": "D:/Desktop/florr/project/转账/main.cpp",
+        "focused": false,
+        "isOpen": true,
+        "left": 0,
+        "order": 0,
+        "top": 1210
+    }
+]

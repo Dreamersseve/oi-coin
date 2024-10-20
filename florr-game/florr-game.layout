@@ -1,0 +1,72 @@
+[
+    {
+        "caretX": 14,
+        "caretY": 7,
+        "filename": "D:/Desktop/florr/project/florr-game/game.h",
+        "focused": false,
+        "isOpen": true,
+        "left": 0,
+        "order": 4,
+        "top": 0
+    },
+    {
+        "caretX": 23,
+        "caretY": 5,
+        "filename": "D:/Desktop/florr/project/florr-game/RSA.h",
+        "focused": false,
+        "isOpen": true,
+        "left": 0,
+        "order": 6,
+        "top": 0
+    },
+    {
+        "caretX": 23,
+        "caretY": 9,
+        "filename": "D:/Desktop/florr/project/florr-game/chient.cpp",
+        "focused": false,
+        "isOpen": true,
+        "left": 0,
+        "order": 1,
+        "top": 0
+    },
+    {
+        "caretX": 1,
+        "caretY": 8,
+        "filename": "D:/Desktop/florr/project/florr-game/chient.h",
+        "focused": false,
+        "isOpen": true,
+        "left": 0,
+        "order": 2,
+        "top": 0
+    },
+    {
+        "caretX": 17,
+        "caretY": 58,
+        "filename": "D:/Desktop/florr/project/florr-game/main.cpp",
+        "focused": false,
+        "isOpen": true,
+        "left": 0,
+        "order": 0,
+        "top": 924
+    },
+    {
+        "caretX": 20,
+        "caretY": 103,
+        "filename": "D:/Desktop/florr/project/florr-game/RSA.cpp",
+        "focused": true,
+        "isOpen": true,
+        "left": 0,
+        "order": 5,
+        "top": 0
+    },
+    {
+        "caretX": 10,
+        "caretY": 28,
+        "filename": "D:/Desktop/florr/project/florr-game/game.cpp",
+        "focused": false,
+        "isOpen": true,
+        "left": 0,
+        "order": 3,
+        "top": 594
+    }
+]

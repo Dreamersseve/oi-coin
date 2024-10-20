@@ -1,0 +1,43 @@
+# Project: florr-server
+# Makefile created by Red Panda C++ 3.1.2871
+
+CXX      = "g++.exe"
+CC       = "gcc.exe"
+WINDRES  = "windres.exe"
+RM       = del /q /f
+CD       = cd /d
+LIBS     = "-Wl,--stack,12582912" "C:/Windows/System32/ws2_32.dll"
+INCS     = 
+CXXINCS  = 
+CXXFLAGS = $(CXXINCS) "-g3" "-pipe" "-Wall" "-O2" "-D_DEBUG"
+CFLAGS   = $(INCS) "-g3" "-pipe" "-Wall" "-O2" "-D_DEBUG"
+WINDRESFLAGS = 
+RES      = florr-server_private.res
+OBJ      = server.o main.o RSA.o $(RES)
+BIN      = florr-server.exe
+LINKOBJ  = "server.o" "main.o" "RSA.o" "florr-server_private.res"
+CLEANOBJ = "server.o" "main.o" "RSA.o" "florr-server_private.res" "florr-server.exe"
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	-$(RM) $(CLEANOBJ) >NUL 2>&1
+
+florr-server.exe: $(OBJ)
+
+	$(CXX) $(LINKOBJ) -o "florr-server.exe" $(LIBS)
+
+server.o: server.cpp
+	$(CXX) -c "server.cpp" -o "server.o" $(CXXFLAGS)  -finput-charset=UTF-8 -fexec-charset=gbk
+
+main.o: main.cpp server.h
+	$(CXX) -c "main.cpp" -o "main.o" $(CXXFLAGS)  -finput-charset=UTF-8 -fexec-charset=gbk
+
+RSA.o: RSA.cpp
+	$(CXX) -c "RSA.cpp" -o "RSA.o" $(CXXFLAGS)  -finput-charset=UTF-8 -fexec-charset=gbk
+
+florr-server_private.res: florr-server_private.rc 
+	$(WINDRES) -i "florr-server_private.rc" --input-format=rc -o "florr-server_private.res" -O coff $(WINDRESFLAGS) 
+

@@ -1,0 +1,46 @@
+# Project: florr-game
+# Makefile created by Red Panda C++ 3.1.2871
+
+CXX      = "g++.exe"
+CC       = "gcc.exe"
+WINDRES  = "windres.exe"
+RM       = del /q /f
+CD       = cd /d
+LIBS     = "-Wl,--stack,12582912" "C:/Windows/System32/ws2_32.dll"
+INCS     = 
+CXXINCS  = 
+CXXFLAGS = $(CXXINCS) "-g3" "-pipe" "-Wall" "-O2" "-D_DEBUG"
+CFLAGS   = $(INCS) "-g3" "-pipe" "-Wall" "-O2" "-D_DEBUG"
+WINDRESFLAGS = 
+RES      = florr-game_private.res
+OBJ      = chient.o main.o RSA.o game.o $(RES)
+BIN      = florr-game.exe
+LINKOBJ  = "chient.o" "main.o" "RSA.o" "game.o" "florr-game_private.res"
+CLEANOBJ = "chient.o" "main.o" "RSA.o" "game.o" "florr-game_private.res" "florr-game.exe"
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	-$(RM) $(CLEANOBJ) >NUL 2>&1
+
+florr-game.exe: $(OBJ)
+
+	$(CXX) $(LINKOBJ) -o "florr-game.exe" $(LIBS)
+
+chient.o: chient.cpp game.h RSA.h chient.h
+	$(CXX) -c "chient.cpp" -o "chient.o" $(CXXFLAGS)  -finput-charset=UTF-8 -fexec-charset=gbk
+
+main.o: main.cpp game.h RSA.h chient.h
+	$(CXX) -c "main.cpp" -o "main.o" $(CXXFLAGS)  -finput-charset=UTF-8 -fexec-charset=gbk
+
+RSA.o: RSA.cpp game.h RSA.h chient.h
+	$(CXX) -c "RSA.cpp" -o "RSA.o" $(CXXFLAGS)  -finput-charset=UTF-8 -fexec-charset=gbk
+
+game.o: game.cpp game.h RSA.h chient.h
+	$(CXX) -c "game.cpp" -o "game.o" $(CXXFLAGS)  -finput-charset=UTF-8 -fexec-charset=gbk
+
+florr-game_private.res: florr-game_private.rc 
+	$(WINDRES) -i "florr-game_private.rc" --input-format=rc -o "florr-game_private.res" -O coff $(WINDRESFLAGS) 
+

@@ -1,0 +1,31 @@
+{
+    "breakpoints": [
+        {
+            "breakpoint_type": 0,
+            "condition": "",
+            "enabled": true,
+            "filename": "game.cpp",
+            "line": 66,
+            "timestamp": "1729408768573"
+        },
+        {
+            "breakpoint_type": 0,
+            "condition": "",
+            "enabled": true,
+            "filename": "game.cpp",
+            "line": 28,
+            "timestamp": "1729408827054"
+        }
+    ],
+    "timestamp": "1729429864124",
+    "watchvars": [
+        {
+            "expression": "playeri",
+            "timestamp": "1729408799723"
+        },
+        {
+            "expression": "server_string",
+            "timestamp": "1729409013709"
+        }
+    ]
+}

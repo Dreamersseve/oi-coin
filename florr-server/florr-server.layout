@@ -1,0 +1,52 @@
+[
+    {
+        "caretX": 1,
+        "caretY": 1,
+        "filename": "D:/Desktop/florr/project/florr-server/server.h",
+        "focused": false,
+        "isOpen": true,
+        "left": 0,
+        "order": 4,
+        "top": 0
+    },
+    {
+        "caretX": 37,
+        "caretY": 7,
+        "filename": "D:/Desktop/florr/project/florr-server/server.cpp",
+        "focused": true,
+        "isOpen": true,
+        "left": 0,
+        "order": 1,
+        "top": 0
+    },
+    {
+        "caretX": 2,
+        "caretY": 16,
+        "filename": "D:/Desktop/florr/project/florr-server/main.cpp",
+        "focused": false,
+        "isOpen": true,
+        "left": 0,
+        "order": 0,
+        "top": 0
+    },
+    {
+        "caretX": 1,
+        "caretY": 1,
+        "filename": "D:/Desktop/florr/project/florr-server/RSA.cpp",
+        "focused": false,
+        "isOpen": true,
+        "left": 0,
+        "order": 2,
+        "top": 0
+    },
+    {
+        "caretX": 1,
+        "caretY": 1,
+        "filename": "D:/Desktop/florr/project/florr-server/RSA.h",
+        "focused": false,
+        "isOpen": true,
+        "left": 0,
+        "order": 3,
+        "top": 0
+    }
+]
